@@ -1,0 +1,17 @@
+{
+  "name": "zara-json-server",
+  "version": "0.0.1",
+  "description": "json-server for ZARA",
+  "main": "index.js",
+  "scripts": {
+    "serve": "json-server --host 127.0.0.2 --port 4000 --watch ./data/allData.json"
+  },
+  "keywords": [
+  
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
