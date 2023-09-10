@@ -1,0 +1,185 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+      margin: 0;
+      padding: 0;
+
+
+  }
+  #container {
+    display: flex;
+    width: 800px;
+    margin-left: 70px;
+    margin-top: 150px;
+    margin-bottom: 300px;
+  }
+
+  #userLogin {
+    display: flex;
+    width: 800px;
+    margin-left: 70px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  p {
+    font-size: 8.5px;
+    font-family: "Neue-Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+  }
+
+  #login {
+    margin-right: 200px;
+    width: 270px;
+  }
+
+  #reg {
+    width: 250px;
+  }
+
+  #mail,
+  #pwd {
+    width: 250px;
+    height: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    border-bottom: 1px solid;
+  }
+
+
+
+  #sub,
+  #create {
+    width: 250px;
+    height: 35px;
+    border: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+
+
+  #p1 {
+    margin-bottom: 25px;
+
+
+  }
+
+  #p2 {
+    margin-bottom: 40px;
+  }
+
+  #h2 {
+    margin-bottom: 30px;
+  }
+
+
+
+  
+
+
+
+
+
+
+  .form-control {
+    box-shadow: none;
+    border-radius: 0px;
+    border-style: none none solid none;
+    transition: all 0.5s;
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+
+  .form-label {
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    display: block;
+    opacity: 1;
+    transform: translateY(-3em);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+  }
+  
+
+  .form-label1 {
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    display: block;
+    opacity: 1;
+    transform: translateY(-3em);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+  }
+
+
+
+
+  .form-control:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+ 
+
+
+
+  .form-control::placeholder {
+    color: transparent;
+  }
+
+  .form-control:focus + .form-label,
+  .form-control:focus + .form-label1,
+  .form-control:not(:placeholder-shown) +.form-label,
+  .form-control:not(:placeholder-shown) +.form-label1
+   {
+   
+    transform: translateY(-4em) scale(0.8);
+  }
+
+ 
+
+  .form-label.active ,.form-label1.active {
+  
+    opacity: 0;
+
+  }
+
+  nav {
+    position: relative;
+  }
+
+  @media only screen and (max-width: 875px) {
+    #userLogin {
+      flex-direction: column;
+      margin-bottom: 60px;
+       width: 50vw;
+    }
+    #container {
+      display:block;
+      margin-bottom: 100px;
+    }
+    #reg {
+      margin-top: 3rem;
+    }
+
+    #p1,
+    #p2 {
+      width: 30vw;
+    }
+
+   
+  }

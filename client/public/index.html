@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZARA Беларусь</title>
+    <link rel="icon" href="./images/zara-avrupa-logos-2020-desing--11.png" type="image/png"/>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+  
+  </head>
+  <body>
+   
+ 
+    <nav id="navbar"></nav>
+    <body onload="setbackground();">
+    
+
+    <div id="container" class="view1-desktop" >
+      
+      </div>
+     
+    
+    <div id="newsletter">
+      <div>
+        <p id="calltoaction">подпишитесь на нашу новостную рассылку</p>
+        <div id="external-links">
+          <a href="https://www.tiktok.com/@zara" target="_blank" id="" class="">TIKTOK</a>
+          <a href="https://www.instagram.com/zara/" target="_blank" id="" class="">INSTAGRAM</a>
+          <a href="https://www.facebook.com/Zara" target="_blank" id="" class="">FACEBOOK</a>
+          <a href="https://twitter.com/ZARA" target="_blank" id="" class="">TWITTER</a>
+          <a href="https://es.pinterest.com/zaraofficial" target="_blank" id="" class="">PINTEREST</a>
+          <a href="http://www.youtube.com/user/zara" target="_blank" id="" class="">YOUTUBE</a>
+          <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank" id="" class="">SPOTIFY</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="footer"></div>
+    
+   
+ 
+ 
+    <script src="./scripts/setbackground.js"></script>
+  
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "./scripts/navbar.js";
+ 
+  let nav_container = document.getElementById("navbar");
+  nav_container.innerHTML = navbar();
+  toggle();
+  import footer from "./scripts/footer.js";
+  let footer_container = document.getElementById("footer");
+  footer_container.innerHTML = footer();
+
+  let kyc = localStorage.getItem("kyc") || [];
+  let action = document.getElementById("user-name");
+
+  if (kyc.length == 0) {
+    action.innerText = "ВОЙТИ";
+  } else {
+    action.innerText = "ВЫХОД";
+  }
+</script>
+<script src="./scripts/navbar-app.js"></script>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Покупки-ZARA Беларусь</title>
+    <link rel="icon" href="../images/zara-avrupa-logos-2020-desing--11.png" type="image/png"/>
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    
+    <link rel="stylesheet" href="..//styles/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/productInfo.css" />
+  </head>
+
+  <body>
+    <nav id="navbar"></nav>
+    <div id="container" class="container-desc">
+      <div id="leftbox" class="leftbox"></div>
+      <div id="rightbox" class="rightbox"></div>
+    </div>
+    <div id="footer"></div>
+   
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "../scripts/navbar.js";
+  let nav_container = document.getElementById("navbar");
+  nav_container.innerHTML = navbar();
+  toggle();
+  import footer from "../scripts/footer.js";
+  let footer_container = document.getElementById("footer");
+  footer_container.innerHTML = footer();
+
+</script>
+<script src="..//scripts/sweetalert2.all.min.js"></script>
+
+<script src="..//scripts/navbar-app.js"></script>
+<script src="../scripts/productInfoLeftbox.js"></script>
+<script src="../scripts/productInfo.js"></script>
+

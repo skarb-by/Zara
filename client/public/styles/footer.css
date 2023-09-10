@@ -1,0 +1,37 @@
+
+
+.bottom-footer {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 9px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  color: black;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+.footer-hr {
+  width: 100%;
+  margin:-2rem 0;
+}
+@media only screen and (max-width: 700px) {
+  .bottom-footer {
+    flex-direction: column;
+    line-height: 2.5;
+    height: 10px;
+      
+  }
+  .footer-hr {
+    margin:3rem 0;
+  } 
+  
+}
+
+
+
+
+

@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+nav {
+    position: relative;
+    width: 100vw;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+  }
+
+  #imageflex {
+    display: flex;
+    justify-content: right;
+    
+  }
+  .userDetails-box {
+    width: 40%;
+  }
+  .productImage {
+    width: 250px;
+    padding: 0 5px;
+  }
+  #numOfCart {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .products_num {
+    color: grey;
+  }
+  .product-name-carts {
+    color: grey;
+    font-size: 12px;
+    font-weight: normal;
+  
+  }
+
+
+  .delivery {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+.div-box_2 {
+  width: 30%;
+}
+  .user {
+    color: grey;
+    margin: 0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    
+  }
+  .checkout {
+    display: flex;
+    background-color: white;
+    justify-content: end;
+    align-items: flex-end;
+    width: 89%;
+   margin-top: 20px;
+   margin-bottom: 250px;
+    bottom: 0px;
+    padding: 10px;
+  }
+  .checkout > div {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    padding: 3px;
+  }
+  #payBOX {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 50px;
+    margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 850px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+     
+    }
+    #imageflex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      justify-content: center;
+    }
+.div-box_2 {
+    width: 100%;
+    
+}
+    .checkout {
+      margin-bottom: 100px;
+      width: 100%;
+    }
+
+#numOfCart {
+    width: 100%;
+    text-align: center;
+ 
+}
+
+
+  }

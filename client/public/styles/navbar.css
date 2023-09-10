@@ -1,0 +1,234 @@
+/* Style sheet for NavBar */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*BURGER*/
+
+
+.burger{
+  display: block;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.burger span, .burger span:before, .burger span:after{
+  width: 80px;
+  position: absolute;
+  height: 10px;
+  background: #000;
+  display: block;
+  transition: .3s;
+  border-radius: 5px;
+}
+.burger span:before{
+  content: "";
+  top: -20px;
+  transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger span{
+  top: 20px;
+}
+.burger span:after{
+  content: "";
+  bottom: -20px;
+  transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger span.active:before{
+  content: "";
+  top: 0px;
+  transform: rotate(45deg);
+  transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger span.active:after{
+  content: "";
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger span.active{
+  background: rgba(255, 255, 255, 0); 
+}
+
+
+.navigation_1 {
+left: -550px;
+
+ width: 530px;
+ background: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+  position: fixed;
+
+ 
+}
+.navigation_1.active{
+top: 100px;
+
+left: 0;
+ transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
+
+ul>li {
+  list-style: none;
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.main_section {
+  font-weight: bold;
+}
+
+.category {
+  margin: 0;
+  background-color:
+    #fdec3e;
+  padding: 15px;
+  width: 500px;
+}
+
+.sub-section {
+  margin: 5px 0;
+}
+
+/* Nav Animation */
+ul {
+  list-style-type: none;
+  width: 200px;
+  height: auto;
+}
+
+ul li {
+  transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -webkit-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -moz-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -o-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -ms-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+}
+
+ul li:hover {
+  margin-left: 20px;
+  font-weight: 600;
+  color: #add8e6;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+}
+#nav-bar-left {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+
+
+#favicon {
+  width: 220px;
+  height: 75px;
+  font-weight: light;
+}
+
+#nav-bar-right {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.nav_item {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.navLabel {
+  display: block;
+  margin: -5px 5px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+#search {
+  margin: 0 5px;
+  border: 0;
+  border-bottom: 3px solid black;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+
+
+@media only screen and (max-width: 865px) {
+  .burger span, .burger span:before, .burger span:after{
+    width: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #search_bar {
+    display: none;
+  }
+ 
+  .navigation_1.active{
+width: 180px;
+  }
+  #favicon {
+    width: 100px;
+    height: 50px;
+    margin: 0.5rem 2rem;
+  }
+
+  #help {
+    display: none;
+  }
+
+  .category {
+  
+    width: 160px;
+  }
+
+}
+#search {
+  margin: 10px;
+  border: 0;
+  border-bottom: 3px solid black;
+  width: 8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-bar-left {
+  
+    width: auto;
+    
+  }
+
+}

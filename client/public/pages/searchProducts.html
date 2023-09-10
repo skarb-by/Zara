@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск-ZARA Беларусь</title>
+    <link rel="icon" href="../images/zara-avrupa-logos-2020-desing--11.png" type="image/png"/>
+
+    
+
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/searchProducts.css">
+    <link rel="stylesheet" href="../styles/renderProducts.css">
+    
+  </head>
+  <body>
+    <style>
+      .searchBarOld {
+        opacity: 0;
+      }
+      </style>
+    <nav id="navbar"></nav>
+    <div class="search-form">
+      <input type="text" id="query" placeholder="ПОИСК">
+  </div>
+   
+    <div id="container">
+     
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module">
+    import renderProducts from "../scripts/renderProducts.js";
+   
+  import navbar from "../scripts/navbar.js";
+  let nav_container = document.getElementById("navbar");
+  nav_container.innerHTML = navbar();
+  toggle();
+
+  let kyc = localStorage.getItem("kyc") || [];
+  let action = document.getElementById("user-name");
+
+  if (kyc.length == 0) {
+    action.innerText = "ВОЙТИ";
+  } else {
+    action.innerText = "ВЫХОД";
+  }
+</script>
+
+
+
+
+<script src="..//scripts/navbar-app.js"></script>
+<script type="module" src="../scripts/searchProducts.js"></script>
+
